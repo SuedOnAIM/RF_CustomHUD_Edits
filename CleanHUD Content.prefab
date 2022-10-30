@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &869343078026906892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 869343078026906883}
+  - component: {fileID: 4646724356750457741}
+  m_Layer: 0
+  m_Name: CleanHUD Content
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &869343078026906883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869343078026906892}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4646724356750457741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869343078026906892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec3b8824308adc64fb1901cef109132a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mutators:
+  - name: CleanHUD
+    description: 
+    menuImage: {fileID: 2800000, guid: 062b6e00ee72bc74cbf67f7715ed6590, type: 3}
+    mutatorPrefab: {fileID: 5522914361796918163, guid: f29719a4a2891e04893b49e09658414e, type: 3}
+    configuration:
+      labels:
+      - id: gameFeedLabel
+        displayName: Game Feed Settings
+        orderPriority: 10
+      - id: playername label
+        displayName: Change player name if you don't want to display your Steam username
+        orderPriority: 15
+      - id: bluename label
+        displayName: Defaults to "The <color=blue>Eagles</color>" if left blank
+        orderPriority: 17
+      - id: bluename label
+        displayName: Defaults to "The <color=red>Ravens</color>" if left blank
+        orderPriority: 19
+      integers: []
+      floats: []
+      ranges: []
+      strings:
+      - id: displayName
+        displayName: Player Name
+        orderPriority: 14
+        value: 
+      - id: blueTeamName
+        displayName: <color=blue>Blue</color> Team Name
+        orderPriority: 16
+        value: 
+      - id: redTeamName
+        displayName: <color=red>Red</color> Team Name
+        orderPriority: 18
+        value: 
+      bools:
+      - id: healthBarVisibility
+        displayName: Display Player Health
+        orderPriority: 0
+        value: 1
+      - id: balanceBarVisibility
+        displayName: Display Balance Health
+        orderPriority: 1
+        value: 1
+      - id: vehicleHUDVisibility
+        displayName: Display Vehicle Health
+        orderPriority: 2
+        value: 1
+      - id: squadTextVisibility
+        displayName: Display Squad Status
+        orderPriority: 3
+        value: 1
+      - id: weaponHUDVisibility
+        displayName: Display Weapon HUD
+        orderPriority: 4
+        value: 1
+      - id: feedEnabled
+        displayName: Enable Game Text Feed
+        orderPriority: 11
+        value: 1
+      - id: displayKills
+        displayName: Display Kills
+        orderPriority: 12
+        value: 1
+      - id: showCapturePointUpdates
+        displayName: Capture Point Updates
+        orderPriority: 13
+        value: 1
+      dropdowns: []
