@@ -22,7 +22,7 @@ function CustomHUD_Weapon:Start()
 	self.script.AddValueMonitor("monitorHUDVisibility", "onHUDVisibilityChange")
 	self.dataContainer = self.gameObject.GetComponent(DataContainer)
 
-	print("<color=lightblue>[Custom HUD]Initialized Weapon Display Module v1.3.0 </color>")
+	print("<color=lightblue>[Custom HUD]Initialized Weapon Display Module v1.3.1 </color>")
 end
 
 function CustomHUD_Weapon:monitorCurrentWeapon()

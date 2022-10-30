@@ -14,7 +14,7 @@ function CustomHUD_SimpleGameFeed:Start()
 		self.lines[i] = ""
 	end
 
-	self.blueTeamHexCode = "#6fa8dc"
+	self.blueTeamHexCode = "#00ADFF"
 	self.redTeamHexCode = "#FF4B00"
 	self.weaponHex = "#FFFFFF"
 
@@ -205,7 +205,7 @@ function CustomHUD_SimpleGameFeed:onCapturePointNeutralized(capturePoint, previo
 end
 
 function CustomHUD_SimpleGameFeed:onActorSpawn(actor)
-	if(actor == Player.actor) then
+	if(actor == Player.actor) and self.feedEnabled then
 		self.hasSpawnedOnce = true
 		self.targets.Canvas.enabled = true
 	end
