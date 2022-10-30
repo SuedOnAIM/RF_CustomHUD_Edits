@@ -59,9 +59,13 @@ MonoBehaviour:
       - id: bluename label
         displayName: Defaults to "The <color=blue>Eagles</color>" if left blank
         orderPriority: 17
-      - id: bluename label
+      - id: redname label
         displayName: Defaults to "The <color=red>Ravens</color>" if left blank
         orderPriority: 19
+      - id: feed exaplin label
+        displayName: Chat feed has <b>explicit language</b>. No slurs included, but
+          f__k is said often.
+        orderPriority: 20
       integers: []
       floats: []
       ranges: []
@@ -100,7 +104,7 @@ MonoBehaviour:
         orderPriority: 4
         value: 1
       - id: feedEnabled
-        displayName: Enable Game Text Feed
+        displayName: Enable Kill and Chat Feed
         orderPriority: 11
         value: 1
       - id: displayKills
